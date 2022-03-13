@@ -1,46 +1,59 @@
+# Decision Making And Loop
 
-
-Decision Making And Loop
-Boolean Expression
-Boolean expressions are used to evaluate conditions. It is used to determine if a condition is true or false. example:
-
+## Boolean Expression
+Boolean expressions are used to evaluate conditions. It is used to determine if a condition is true or false.
+example:
+```
 a = 5
 b = 10
 c = a > b #Boolean expression which evaluates to False
+```
 
-
-
-Comparison Operators
+### Comparison Operators
 There are six comparison operators in Python. They are used to compare two values.
+1. == : equal to
+2. != : not equal to
+3. < : less than
+4. '>' : greater than
+5. <= : less than or equal to
+6. '>=' : greater than or equal to
 
-== : equal to
-!= : not equal to
-< : less than
-'>' : greater than
-<= : less than or equal to
-'>=' : greater than or equal to
 example:
-
+```
 x = 5
 y = 10
 
 print(x == y) # False
 print(x != y) # True
 print(x < y) # True
-print(x > y) # False
+pritn(x > y) # False
 print(x <= y) # True
 print(x >= y) # False
-Logical Operators
+```
+
+### Logical Operators
 Logical operators are used to combine conditional statements and evaluate conditions.
+<table>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>and</td>
+<td>If both the operands are true then condition becomes true.</td>
+</tr>
+<tr>
+<td>or</td>
+<td>If any of the two operands are true then condition becomes true.</td>
+</tr>
+<tr>
+<td>not</td>
+<td>used to reverse the result.</td>
+</tr>
+</table>
 
-
-
-Operator	Description
-and	If both the operands are true then condition becomes true.
-or	If any of the two operands are true then condition becomes true.
-not	used to reverse the result.
 example:
-
+```
 #and operator
 x = 5
 y = 10
@@ -60,18 +73,20 @@ print(x == y or x < z) # True
 print(not(x == y)) # False
 print(not(x == z)) # True
 
+```
 
 
-If..else statement
+
+## If..else statement
 if..else statement is used to execute a block of code if a condition is true, otherwise it will execute a different block of code.
-
-if
+### if
 syntax:
-
+```
 if condition:
     statement(s)
+```
 example:
-
+```
 x = 5
 y = -1
 
@@ -84,18 +99,17 @@ if y > 0:
     print('x is positive')
 
 print('This is always executed')
-
-
-
-if...else
+```
+### if...else
 syntax:
-
+```
 if boolean_expression:
     statement(s)
 else:
     statement(s)
+```
 example:
-
+```
 x = -1
 
 if x >= 0:
@@ -105,20 +119,19 @@ else:
     print('x is negative')
 
 print('This is always executed')
-
-
-
-if...elif...else
+```
+### if...elif...else
 syntax:
-
+```
 if boolean_expression:
     statement(s)
 elif boolean_expression:
     statement(s)
 else:
     statement(s)
+```
 example:
-
+```
 x = -1
 
 if x > 0:
@@ -129,13 +142,11 @@ else:
     print('x is negative')
 
 print('This is always executed')
-
-
-
-
-Nesting if...else
-if...else statement inside another if...else statement is called as nested if...else statement. syntax:
-
+```
+### Nesting if...else
+if...else statement inside another if...else statement is called as nested if...else statement.
+syntax:
+```
 if boolean_expression:
     if boolean_expression:
         statement(s)
@@ -143,8 +154,10 @@ if boolean_expression:
         statement(s)
 else:
     statement(s)
-example:
+```
 
+example:
+```
 num  = float(input('Enter a number: '))
 if num >= 0:
     if num == 0:
@@ -153,16 +166,17 @@ if num >= 0:
         print('Positive number')
 else:
     print('Negative number')
+```
 
-
-
-While loop
-while loop is used to execute a block of code as long as the condition is true. syntax:
-
+## While loop
+while loop is used to execute a block of code as long as the condition is true.
+syntax:
+```
 while boolean_expression:
     statement(s)
+```
 example:
-
+```
 n = 3
 i = 1
 while i <= n:
@@ -173,19 +187,22 @@ while i <= n:
 while i <= n:
     print(i)
 
-
-For loop
-for loop is used to iterate over a sequence (e.g., string, tuple, list) and execute a block of code for each element.
+```
+## For loop
+for loop is used to iterate over a sequence (e.g., string, tuple, list) and execute a block of code for each element.   
 syntax:
-
+```
 for element in sequence:
     statement(s)
-Sequence
-String => It is a sequence of characters.
-Lists => It is a sequence of items.
-range() => It is used to create sequence of integers.
-example:
+```
 
+### Sequence
+1. String => It is a sequence of characters.
+2. Lists => It is a sequence of items.
+3. range() => It is used to create sequence of integers.
+
+example:
+```
 
 #string
 a = "Python"
@@ -213,48 +230,51 @@ for num in numbers:
 
 print('Sum :', sum)
 
+```
+## Break and continue statement
 
-
-Break and continue statement
 break statement is used to terminate the loop.
 
 syntax:
-
+```
 break
+```
 example:
-
+```
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for num in numbers:
     if num == 5:
         break
     print(num)
 
-
+```
 
 continue statement is used to skip the remaining statements of the loop.
 
 syntax:
-
+```
 continue
+```
 example:
-
+```
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for num in numbers:
     if num == 5:
         continue
     print(num)
+```
 
-
-
-    
-Pass statement
+## Pass statement
 pass statement is used when a statement is required syntactically but you do not want any command or code to execute.
 
 syntax:
-
+```
 pass
+```
 example:
-
+```
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for num in numbers:
     pass
+
+```
